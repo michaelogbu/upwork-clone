@@ -10,24 +10,26 @@ const navBars = document.querySelector("#navBar");
 navBars.addEventListener('click', () => {
     if (!mainNav.classList.contains("show_nav")) {
         mainNav.classList.add("show_nav")
-    }else if(mainNav.classList.contains("show_nav")){
-        mainNav.classList.add("hide_nav")
     }else{
-        mainNav.classList.remove("hide_nav")
+        mainNav.classList.remove("show_nav")
     }
 })
-// navBars.classList.replace('mainNav', 'navTimes')
 
-// sidebar.classList.contains('show-sidebar') ? sidebar.classList.remove('show-sidebar') : sidebar.classList.add('show-sidebar');
-// else{
-//     mainNav.classList.add('show_nav')
-// }
-// mainNav.classList.toggle('show_nav')
-// else {
-//     // console.log(1223);
-//     // mainNav.classList.remove("show_nav")
-// }
 
+// ===========
+// BACK TOTOP
+// ===========
+const totop = document.querySelector(".TotopContainer");
+// console.log(totop);
+window.addEventListener("scroll", () => {
+    const scrollHgt = window.pageYOffset;
+    // console.log(scrollHgt);
+    if(scrollHgt > 500){
+        totop.classList.add("showtoTop");
+    }else{
+        totop.classList.remove("showtoTop");
+    }
+})
 
 
 // =============== 

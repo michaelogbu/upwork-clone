@@ -1270,6 +1270,33 @@ SKILL SECTION
     visibility: visible;
 }
 
+/*
+=============== 
+TOTOP SECTION
+===============
+*/
+.TotopContainer{
+    position: fixed;
+    left: 1265px;
+    bottom: 20px;
+    width: 50px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 4px;
+    background: var(--liteGreen);
+    border: 2px solid #fff;
+    display: none;
+}
+.showtoTop{
+    transition: all 0.6s ease-in-out;
+    display: block;
+}
+.TotopContainer .fa-arrow-up{
+    color: #fff;
+    font-size: 22px;
+}
+
+
 
 /*
 =============== 
@@ -2253,8 +2280,25 @@ MEDIUM SCREEN
         font-size: 12px;
     }
 
+    /*
+    =============== 
+    TOTOP SECTION
+    ===============
+    */
+    .TotopContainer{
+        position: fixed;
+        left: 420px;
+        bottom: 20px;
+        width: 50px;
+        padding: 5px;
+    }
+    .TotopContainer .fa-arrow-up{
+        color: #fff;
+        font-size: 19px;
+    }
 
-        /*
+
+    /*
     =============== 
     FOOTER SECTION
     ===============
