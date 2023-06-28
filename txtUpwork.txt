@@ -1,0 +1,168 @@
+<!-- ======================================================================================================================================================= -->
+<!-- ======================================================================================================================================================= -->
+                    <!-- NAV DROP DOWN -->
+                <div class="dropDownOne">
+                    <div class="dropOneContainer">
+                    
+                        <div class="dropDownLeft">
+                            <div class="dropDownOneContainer" id="dropOneAside">
+                                <div class="dropDownOneContentLeft">
+                                    <h4>Post a job and hire a pro</h4>
+                                    <p>Tarlent marketplace</p>
+                                </div>
+                                <div class="dropDownOneIcon">
+                                    <i class="fas fa-chevron-right"></i>
+                                </div>
+                            </div>
+                            <div class="dropDownOneContainer" id="dropTwo">
+                                <div class="dropDownOneContentLeft">
+                                    <h4>Browse and buy projects</h4>
+                                    <p>Project Catalog</p>
+                                </div>
+                                <div class="dropDownOneIcon">
+                                    <i class="fas fa-chevron-right"></i>
+                                </div>
+                            </div>
+                            <div class="dropDownOneContainer" id="dropThree">
+                                <div class="dropDownOneContentLeft">
+                                    <h4>Let us find the right talent</h4>
+                                    <p>Talent Scout</p>
+                                </div>
+                                <div class="dropDownOneIcon">
+                                    <i class="fas fa-chevron-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- vartical line -->
+                        <div class="vline"></div>
+
+                            <!-- DROP ONE ASIDE CONTENT -->
+                        <div class="dropOne">
+                            <div class="dropContainerOne">
+                                <div class="dropDownOneCenter ">
+                                    <div class="centerContainer">
+                                        <div class="centerDropDownContent">
+                                            <h4>Talent Marketplace <sup id="ddtm">TM</sup></h4>
+                                            <p>
+                                                Learn about working with tarlent or explore your <br>
+                                                specific hiring needs.
+                                            </p>
+            
+                                            <a href="#">Hire on Tarlent Marketplace <i class="fa fa-arrow-right"></i></a> 
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="dropDownOneRight dropOne">
+                                    <li><a href="#" class="dropDownOneRightLink">Development & IT</a></li>
+                                    <li><a href="#" class="dropDownOneRightLink">Design & Creative</a></li>
+                                    <li><a href="#" class="dropDownOneRightLink">Sales & Marketing</a></li>
+                                    <li><a href="#" class="dropDownOneRightLink">Writing & Translation</a></li>
+                                    <li><a href="#" class="dropDownOneRightLink">Admin & Customer Support</a></li>
+                                    <li><a href="#" class="dropDownOneRightLink">Finance & Accounting</a></li>
+                                    <li><a href="#" class="dropDownOneRightLink">HR & Training</a></li>
+                                    <li><a href="#" class="dropDownOneRightLink">Legal</a></li>
+                                    <li><a href="#" class="dropDownOneRightLink">Engineering & Architecture</a></li>
+                                    <li><a href="#" class="dropDownOneRightLink">Hire freelancers</a></li>
+                                </div>
+                            </div>
+                        </div>
+
+                            <!-- DROP TWO ASIDE CONTENT -->
+                        <div class="dropDownTwoCenter dropTwo">
+                            <div class="dropContainerTwo">
+                                <div class="centerContainer">
+                                    <div class="centerDropDownContent">
+                                        <h4>Project Catalog <sup id="ddtm">TM</sup></h4>
+                                        <p>
+                                            Browse and buy projects that <br>
+                                            have a clear scope and price.
+                                        </p>
+        
+                                        <a href="#">Browse Project Catalog <i class="fa fa-arrow-right"></i></a> 
+                                    </div>
+                                </div>
+        
+                                <div class="dropDownTwoContentContainer dropTwo">
+                                    <a href="">
+                                        <div class="dropDownTwoItems">
+                                            <div class="dropDownTwoItemsIMG">
+                                                <img src="img/pic-1.png" alt="" srcset="">
+                                            </div>
+                                            <p class="dropDownTwopara">Logo Design</p>
+                                        </div>
+                                    </a>
+                                    
+                                    <a href="">
+                                        <div class="dropDownTwoItems">
+                                            <div class="dropDownTwoItemsIMG">
+                                                <img src="img/pic-1.png" alt="" srcset="">
+                                            </div>
+                                            <p class="dropDownTwopara">Articles & Blog Post</p>
+                                        </div>
+                                    </a>
+            
+                                    <a href="">
+                                        <div class="dropDownTwoItems">
+                                            <div class="dropDownTwoItemsIMG">
+                                                <img src="img/pic-1.png" alt="" srcset="">
+                                            </div>
+                                            <p class="dropDownTwopara">WordPress</p>
+                                        </div>
+                                    </a>
+            
+                                    <a href="">
+                                        <div class="dropDownTwoItems">
+                                            <div class="dropDownTwoItemsIMG">
+                                                <img src="img/pic-1.png" alt="" srcset="">
+                                            </div>
+                                            <p class="dropDownTwopara">Social Media <br> Marketing</p>
+                                        </div>
+                                    </a>
+            
+                                    <a href="">
+                                        <div class="dropDownTwoItems">
+                                            <div class="dropDownTwoItemsIMG">
+                                                <img src="img/pic-1.png" alt="" srcset="">
+                                            </div>
+                                            <p class="dropDownTwopara">Video Editing</p>
+                                        </div>
+                                    </a>
+            
+                                    <a href="">
+                                        <div class="dropDownTwoItems">
+                                            <div class="dropDownTwoItemsIMG">
+                                                <img src="img/pic-1.png" alt="" srcset="">
+                                            </div>
+                                            <p class="dropDownTwopara">SEO</p>
+                                        </div>
+                                    </a>    
+                                </div>
+                            </div>
+                       </div>
+
+                            <!-- DROP THREE ASIDE CONTENT -->
+                        <div class="dropDownThreeCenter dropThree">
+                            <div class="dropContainerThree">
+                                <div class="centerContainer">
+                                    <div class="centerDropDownContent">
+                                        <h4>Talent Scout <sup id="ddtm">TM</sup></h4>
+                                        <p>
+                                            Learn how our recruiters find you expert developers, <br>
+                                            desiners, and marketers.
+                                        </p>
+        
+                                        <a href="#">Talk to Talent Scout <i class="fa fa-arrow-right"></i></a> 
+                                    </div>
+                                </div>
+            
+                                <div class="dropDownOneRight dropThree">
+                                    <li><a href="#" class="dropDownOneRightLink">Development & IT</a></li>
+                                    <li><a href="#" class="dropDownOneRightLink">Design & Creative</a></li>
+                                    <li><a href="#" class="dropDownOneRightLink">Marketing</a></li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
