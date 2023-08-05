@@ -1201,13 +1201,17 @@ SKILL SECTION
 ===============
 */
 .skillsSection{
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-content: center;
+    /* justify-content: center; */
 }
 .skill_left{
     width: 300px;
     padding: 10px;
     position: relative;
+    /* border: 2px solid red; */
+
 }
 .skillHead{
     font-size: 30px;
@@ -1227,6 +1231,7 @@ SKILL SECTION
 .skill_right{
     display: flex;
     flex-direction: column;
+    height: 630px;
 }
 .skillContainer{
     display: grid;
@@ -1234,11 +1239,9 @@ SKILL SECTION
     row-gap: 15px;
     column-gap: 30px;
     padding: 10px;
-    /* margin-left: 20px; */
 }
 .skillLink{
-    /* margin-left: 20pxpx; */
-    font-size: 19px;
+    font-size: 15px;
     font-weight: 500;
     color: var(--lightFont);
     transition: all 0.6s ease-in-out;
@@ -1247,27 +1250,29 @@ SKILL SECTION
     color: var(--liteGreen);
     text-decoration: underline;
 }
-
-#skillOneContainer{
-    /* display: block; */
+.skillOneContainer{
+    /* display: none; */
     visibility: hidden;
 }
-#skillTwoContainer{
+.skillTwoContainer{
     /* display: none; */
-    visibility: visible;
+    visibility: hidden;
     position: absolute;
 }
-#skillThreeContainer{
-    /* display: none; */
+.skillThreeContainer{
+    /* display: grid; */
+    /* grid-template-columns: repeat(3, 2fr); */
     position: absolute;
     visibility: hidden;
 }
-#skillFourContainer{
+.skillFourContainer{
+    /* display: none; */
     position: absolute;
     visibility: hidden;
 }
 .skillShow{
     visibility: visible;
+    /* display: grid; */
 }
 
 /*
@@ -2268,11 +2273,20 @@ MEDIUM SCREEN
     #skilltm{
         font-size: 5px;
     }
+    .skill_left{
+        width: 170px;
+    }
+    .skill_right{
+        width: 300px;
+        height: 430px;
+    }
     .skillContainer{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         row-gap: 5px;
-        column-gap: 10px;
+        column-gap: 5px;
+        width: 100%;
+        /* margin-left: -100px; */
         /* padding: 10px; */
         /* margin-left: 20px; */
     }
