@@ -34,37 +34,39 @@ window.addEventListener("scroll", () => {
 // =============== 
 // SKILL SECTION
 // ===============
+const skillLeft_contaniner = document.querySelector('.skill_left');
+const skillRight_contaniner = document.querySelector('.skill_right');
 const skillbtns = document.querySelectorAll(".skillHead");
-const skillOne = document.querySelector(".skillHeadOne");
-const skillTwo = document.querySelector(".skillHeadTwo");
-const skillThree = document.querySelector(".skillHeadThree");
-const skillFour = document.querySelector(".skillHeadFour");
-// console.log(skillContainer.children);
+const skillContainers = document.querySelectorAll('.skillContainer');
+const skillShow = document.querySelector('.skillShow');
 
-function showNext () {
-    const skillShow = document.querySelector('.skillShow');
-    // const skillContainer = document.querySelector('.skill_right');
-    const current = skillShow.nextElementSibling;
-    console.log(current);
+
+function showOne () {
+    // const first_child = skillShow.nextElementSibling
+    const current =  skillRight_contaniner.firstElementChild
+    const mike = current.nextElementSibling
     skillShow.classList.remove('skillShow')
-    if(current){
-        current.classList.add('skillShow')
-    }else{
-        skillShow.lastElementChild
+    if (current.classList.contains('skillShow')) {
+        current.classList.remove('skillShow')
+    } else {
+        mike.classList.add('skillShow')
     }
 }
 
-skillbtns.forEach((skilllinks) => {
-    skilllinks.addEventListener("click", (e) => {
+
+skillbtns.forEach((skilllink) => {
+    skilllink.addEventListener("click", (e) => {
         e.currentTarget;
-        if(skilllinks.classList.contains('skillHeadOne')){
-            showNext();
-        }else if(skilllinks.classList.contains('skillHeadTwo')){
-            showNext();
-        }else if(skilllinks.classList.contains('skillHeadThree')){
-            showNext();
-        }else if(skilllinks.classList.contains('skillHeadFour')){
-            showNext();
+        if(skilllink.classList.contains('skillHeadOne')){
+            showOne();
         }
+        if(skilllink.classList.contains('skillHeadTwo')){
+            showOne()
+        }
+        if(skilllink.classList.contains('skillHeadThree')){
+            showOne()
+        }
+        // if(skilllink.classList.contains('skillHeadFour')){
+        // }
     })
 })
