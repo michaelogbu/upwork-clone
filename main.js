@@ -39,18 +39,15 @@ const skillRight_contaniner = document.querySelector('.skill_right');
 const skillbtns = document.querySelectorAll(".skillHead");
 const skillContainers = document.querySelectorAll('.skillContainer');
 const skillShow = document.querySelector('.skillShow');
+const one = document.querySelector('.skillOneContainer');
+const two = document.querySelector('.skillTwoContainer');
+const three = document.querySelector('.skillThreeContainer');
+const four = document.querySelector('.skillFourContainer');
 
-
+console.log(two.nextElementSibling);
 function showOne () {
-    // const first_child = skillShow.nextElementSibling
-    const current =  skillRight_contaniner.firstElementChild
-    const mike = current.nextElementSibling
-    skillShow.classList.remove('skillShow')
-    if (current.classList.contains('skillShow')) {
-        current.classList.remove('skillShow')
-    } else {
-        mike.classList.add('skillShow')
-    }
+    
+    
 }
 
 
@@ -58,15 +55,15 @@ skillbtns.forEach((skilllink) => {
     skilllink.addEventListener("click", (e) => {
         e.currentTarget;
         if(skilllink.classList.contains('skillHeadOne')){
-            showOne();
+            // showOne();
         }
         if(skilllink.classList.contains('skillHeadTwo')){
-            showOne()
+            // showOne()
         }
         if(skilllink.classList.contains('skillHeadThree')){
-            showOne()
+            // showOne()
         }
-        // if(skilllink.classList.contains('skillHeadFour')){
-        // }
+        if(skilllink.classList.contains('skillHeadFour')){
+        }
     })
 })

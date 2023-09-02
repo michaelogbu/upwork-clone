@@ -1201,18 +1201,18 @@ SKILL SECTION
 ===============
 */
 .skillsSection{
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(2, 1fr);
-    place-content: center;
-    /* justify-content: center; */
-    /* border: 2px solid red; */
+    place-content: center; */
+    position: relative;
+    margin-bottom: 320px;
+
 }
 .skill_left{
     width: 300px;
     padding: 10px;
-    position: relative;
-    /* border: 2px solid red; */
-
+    display: flex;
+    flex-direction: column;
 }
 .skillHead{
     font-size: 30px;
@@ -1229,16 +1229,20 @@ SKILL SECTION
     font-size: 9px;
 }
 
-.skill_right{
+/* .skill_right{
     display: flex;
     flex-direction: column;
     height: 630px;
-}
+} */
 .skillContainer{
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    /* border: 1px solid red; */
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 15px;
-    column-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 2px;
+    column-gap: 10px;
     padding: 10px;
 }
 .skillLink{
@@ -1246,34 +1250,27 @@ SKILL SECTION
     font-weight: 500;
     color: var(--lightFont);
     transition: all 0.6s ease-in-out;
+    /* border: 1px solid blue; */
+    margin: 0;
 }
 .skillLink:hover{
     color: var(--liteGreen);
     text-decoration: underline;
 }
 .skillOneContainer{
-    /* display: none; */
     visibility: hidden;
 }
 .skillTwoContainer{
-    /* display: none; */
     visibility: hidden;
-    position: absolute;
 }
 .skillThreeContainer{
-    /* display: grid; */
-    /* grid-template-columns: repeat(3, 2fr); */
-    position: absolute;
     visibility: hidden;
 }
 .skillFourContainer{
-    /* display: none; */
-    position: absolute;
     visibility: hidden;
 }
 .skillShow{
     visibility: visible;
-    /* display: grid; */
 }
 
 /*
@@ -1476,13 +1473,19 @@ LOGIN PAGE
     width: 260px;
     font-size: 12px;
     margin-bottom: 18px;
+    text-align: center;
+    position: relative;
 }
-.fa-google{
-    margin-right: 44px;
-    padding: 5px;
+.googleBtn span{
+    margin-top: -60px;
+}
+.google{
+    width: 22px;
+    height: 22px;
+    margin: 0 30px 0 -70px;
     border-radius: 50px;
-    background: var(--liteGreen);
-    border: 1px solid var(--liteGreen);
+    position: absolute;
+    top: 3px;
 }
 .appleBtn{
     background: #fff;
@@ -2267,8 +2270,11 @@ MEDIUM SCREEN
     SKILL SECTION
     ===============
     */
+    .skillsSection{
+        margin-bottom: 800px;
+    }
     .skillHead{
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 500;
     }
     #skilltm{
@@ -2277,19 +2283,19 @@ MEDIUM SCREEN
     .skill_left{
         width: 170px;
     }
-    .skill_right{
+    /* .skill_right{
         width: 300px;
         height: 430px;
-    }
+    } */
     .skillContainer{
+        position: absolute;
+        top: 1px;
+        right: 1px;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        row-gap: 5px;
-        column-gap: 5px;
-        width: 100%;
-        /* margin-left: -100px; */
-        /* padding: 10px; */
-        /* margin-left: 20px; */
+        grid-template-columns: repeat(1, 1fr);
+        /* row-gap: 5px; */
+        column-gap: -5px;
+        /* width: 100%; */
     }
     .skillLink{
         font-size: 12px;
