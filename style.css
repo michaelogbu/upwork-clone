@@ -17,9 +17,13 @@
     text-decoration: none;
     font-family: sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 .contained{
     width: 90%;
     margin: auto;
+    /* padding: 0 6%; */
 }
 .TopSpace{
     margin-top: 30px;
@@ -45,7 +49,8 @@ NAVIGATION
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    z-index: 1000;
+    /* z-index: 1000; */
+    border: 1px red;
     
 }
 .NavOneContainer{
@@ -526,13 +531,16 @@ FT THREE
 
 
 /* NAV-TWO DROPDOWN */
-
+/* .navTwoListDropDownMother{
+    position: relative;
+} */
 .navTwoDropDown{
-    top: 101px;
-    left: 540px;
+    /* top: 101px;
+    left: 540px; */
+    width: 175px;
     color: var(--normalGreen);
     margin-bottom: 5px;
-    padding: 10px;
+    padding: 5px;
     border-radius: 5px;
     background-color: #fff;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
@@ -638,28 +646,42 @@ END OF NAV DROP DOWN
     font-weight: 600;
     font-size: 80px;
     color: var(--darkFont);
+    text-align: center;
 }
 .navForm{
-    width: 60%;
+    width: 910px;
     margin-top: 20px;
     border: 1px solid #b0bdc4;
     padding: 5px;
     border-radius: 50px;
 }
-.fa-search{
+.navForm div{
+    /* width: 100%; */
+    display: flex;
+    flex-grow: 10;
+    align-items: center;
+    justify-content: space-between;
+}
+.Search{
     color: #5c5959;
+    margin: 0 5px;
+    font-size: 19px;
 }
 #navInput{
+    margin-right: 10px;
     outline: none;
     border: none;
     font-size: 17px;
-    width: 78.5%;
+    width: 80%;
 }
 .navFormBtn{
+    /* display: flex; */
+    /* align-items: end; */
     padding: 10px 20px;
     border: none;
     border-radius: 50px;
     background-color: var(--normalGreen);
+    /* margin-right: 100; */
 }
 .navFormBtn:hover{
     background-color: var(--liteGreen);
@@ -675,6 +697,7 @@ END OF NAV DROP DOWN
     display: flex;
     align-items: center;
     justify-content: space-between; 
+    flex-wrap: wrap;
 }
 .lastNavHead{
     font-size: 14px;
@@ -713,6 +736,7 @@ SECTION ONE
     padding: 15px;
     border-radius: 10px;
     background-color: var(--hevryGreen);
+    /* width: 100%; */
 }
 /* SECTION LEFT */
 .secOneLeft{
@@ -1014,7 +1038,7 @@ SECTION FIVE
     flex-wrap: wrap;
 }
 #sectionFiveImg{
-    width: 700px;
+    width: 690px;
     height: 420px;
 }
 .sectionFiveAside{
@@ -1201,18 +1225,22 @@ SKILL SECTION
 ===============
 */
 .skillsSection{
-    /* display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    align-items: start;
+    /* justify-content: space-evenly; */
+    /* grid-template-columns: repeat(2, 1fr);
     place-content: center; */
-    position: relative;
-    margin-bottom: 320px;
+    /* position: relative;
+    margin-bottom: 320px; */
 
 }
 .skill_left{
-    width: 300px;
+    width: 265px;
     padding: 10px;
     display: flex;
     flex-direction: column;
+    /* border: 1px solid red; */
+    margin-right: 30px;
 }
 .skillHead{
     font-size: 30px;
@@ -1229,48 +1257,47 @@ SKILL SECTION
     font-size: 9px;
 }
 
-/* .skill_right{
+.skill_right{
     display: flex;
     flex-direction: column;
-    height: 630px;
-} */
+}
 .skillContainer{
-    position: absolute;
+    /* position: absolute;
     top: 1px;
-    right: 1px;
+    right: 1px; */
     /* border: 1px solid red; */
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    row-gap: 2px;
-    column-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
     padding: 10px;
 }
 .skillLink{
-    font-size: 15px;
+    font-size: 19px;
     font-weight: 500;
     color: var(--lightFont);
     transition: all 0.6s ease-in-out;
     /* border: 1px solid blue; */
-    margin: 0;
+    margin: 0 10px;
+
 }
 .skillLink:hover{
     color: var(--liteGreen);
     text-decoration: underline;
 }
 .skillOneContainer{
-    visibility: hidden;
+    display: none;
 }
 .skillTwoContainer{
-    visibility: hidden;
+    display: none;
 }
 .skillThreeContainer{
-    visibility: hidden;
+    display: none;
 }
 .skillFourContainer{
-    visibility: hidden;
+    display: none;
 }
-.skillShow{
-    visibility: visible;
+.activeSkill{
+    display: grid;
 }
 
 /*
@@ -1280,7 +1307,7 @@ TOTOP SECTION
 */
 .TotopContainer{
     position: fixed;
-    left: 1265px;
+    right: 10px;
     bottom: 20px;
     width: 50px;
     text-align: center;
@@ -1604,7 +1631,7 @@ SMALL SCREEN
 MEDIUM SCREEN
 ============
 */
-@media screen and (max-width: 770px) {
+@media all and (max-width: 1020px) {
     /* 
     ===========
     NAVIGATION
@@ -1674,9 +1701,9 @@ MEDIUM SCREEN
         margin-bottom: 5px;
      }
      .FTContentLeftOne > p{
-         font-size: 9px;
-         color: var(--lightFont);
-         font-weight: 500;
+        font-size: 9px;
+        color: var(--lightFont);
+        font-weight: 500;
      }
      .FTIcon{
         margin-left: -10px;
@@ -1887,12 +1914,13 @@ MEDIUM SCREEN
         font-weight: 500;
        
     }
-    /* NAV-TWO DROPDOWN */
 
+    /* NAV-TWO DROPDOWN */
+    /* 
     .navTwoDropDown{
         top: 111px;
         left: 240px;
-    }
+    } */
     
 
 
@@ -1914,6 +1942,13 @@ MEDIUM SCREEN
     .navBtnSignup a{
         font-size: 10px;
     }
+
+
+    /* 
+    =========
+    NAV-THREE
+    =========
+    */
     #navHeadH1{
         font-weight: 400;
         font-size: 50px;
@@ -1921,12 +1956,13 @@ MEDIUM SCREEN
     }
 
     .navForm{
-        width: 90%;
+        width: 400px;
         margin-top: 20px;
         border: 1px solid #b0bdc4;
         padding: 5px;
         border-radius: 50px;
     }
+    
     #navInput{
         outline: none;
         border: none;
@@ -1934,6 +1970,7 @@ MEDIUM SCREEN
         width: 76%;
     }
     .navFormBtn{
+        width: 90px;
         padding: 5px 10px;
         border: none;
         border-radius: 50px;
@@ -2271,34 +2308,42 @@ MEDIUM SCREEN
     ===============
     */
     .skillsSection{
-        margin-bottom: 800px;
+        display: flex;
+        flex-direction: column;
+    }
+    .skill_left{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        /* gap: 10px; */
+        /* border: 1px solid red; */
+        padding: 0;
+        margin: 0;
     }
     .skillHead{
-        font-size: 18px;
-        font-weight: 500;
+        font-size: 19.1px;
+        font-weight: 700;
+        letter-spacing: -1px;
     }
     #skilltm{
         font-size: 5px;
     }
-    .skill_left{
-        width: 170px;
+   
+    .skill_right{
+        display: flex;
+        flex-direction: column;
     }
-    /* .skill_right{
-        width: 300px;
-        height: 430px;
-    } */
     .skillContainer{
-        position: absolute;
-        top: 1px;
-        right: 1px;
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        /* row-gap: 5px; */
-        column-gap: -5px;
-        /* width: 100%; */
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
     }
     .skillLink{
-        font-size: 12px;
+        font-size: 15px;
     }
 
     /*
@@ -2308,7 +2353,7 @@ MEDIUM SCREEN
     */
     .TotopContainer{
         position: fixed;
-        left: 420px;
+        right: 10px;
         bottom: 20px;
         width: 50px;
         padding: 5px;

@@ -21,7 +21,7 @@ navBars.addEventListener('click', () => {
 const totop = document.querySelector(".TotopContainer");
 // console.log(totop);
 window.addEventListener("scroll", () => {
-    const scrollHgt = window.pageYOffset;
+    const scrollHgt = window.scrollY;
     // console.log(scrollHgt);
     if(scrollHgt > 500){
         totop.classList.add("showtoTop");
@@ -44,7 +44,7 @@ const two = document.querySelector('.skillTwoContainer');
 const three = document.querySelector('.skillThreeContainer');
 const four = document.querySelector('.skillFourContainer');
 
-console.log(two.nextElementSibling);
+// console.log(two.nextElementSibling);
 function showOne () {
     
     
@@ -55,15 +55,16 @@ skillbtns.forEach((skilllink) => {
     skilllink.addEventListener("click", (e) => {
         e.currentTarget;
         if(skilllink.classList.contains('skillHeadOne')){
-            // showOne();
+           
         }
         if(skilllink.classList.contains('skillHeadTwo')){
-            // showOne()
+           
         }
         if(skilllink.classList.contains('skillHeadThree')){
-            // showOne()
+
         }
         if(skilllink.classList.contains('skillHeadFour')){
+            
         }
     })
 })
